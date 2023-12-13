@@ -12,11 +12,6 @@ private:
 	T* data;
 
 public:
-	/*MyArray()
-	{
-		length = 0;
-		data = new T[0];
-	}*/
 
 	MyArray(int lenght)
 	{
@@ -72,7 +67,7 @@ public:
 		return *this;
 	}
 
-	int get_data(int index)
+	T get_data(int index)
 	{
 		if (0 > index || index >= length)
 		{
